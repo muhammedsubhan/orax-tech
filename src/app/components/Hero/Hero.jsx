@@ -57,7 +57,7 @@ const Hero = () => {
               <Cursor />
             </p>
           </div>
-          <button className="bg-sky-600 flex items-center gap-2 px-10 py-1.5 rounded-full text-xl text-white">
+          <button className="bg-sky-600 flex items-center gap-2 px-10 py-1.5 md:text-sm  rounded-full text-xl text-white">
             Let's Talk{" "}
             <span className="arrow-animation ">
               <AiOutlineArrowRight />
@@ -68,7 +68,7 @@ const Hero = () => {
           <Image
             src="/hero.jpg"
             width={700}
-            height={40}
+            height={700}
             alt="hero"
             className="w-[700px]"
           />
