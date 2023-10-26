@@ -22,7 +22,7 @@ const Hero = () => {
   });
 
   return (
-    <div className="min-h-screen px-5 sm:px-2 py-5  ">
+    <div className="min-h-[700px] px-5 sm:px-2 py-5  ">
       <div className="flex justify-around items-center ">
         <div className="flex flex-col self-end pb-12 gap-5 sm:hidden">
           <p className="text-2xl hover:text-blue-400 hover:scale-150 transition ease-in-out delay-75">
