@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const CaseStudy = () => {
   const Projects = [
@@ -77,6 +78,12 @@ const CaseStudy = () => {
                     </p>
                   ))}
                 </div>
+                <button className="bg-sky-600 flex items-center gap-2 px-6 py-1.5 md:text-sm sm:text-xs rounded-full text-base text-white">
+                  View Portfolio
+                  <span className="arrow-animation ">
+                    <AiOutlineArrowRight />
+                  </span>
+                </button>
               </div>
             </div>
           );
