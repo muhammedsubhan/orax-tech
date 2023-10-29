@@ -56,9 +56,10 @@ const OurProjects = () => {
             src="/projects-bg.jpg"
             width={1300}
             height={400}
+            alt="banner"
             className="w-full h-[400px] object-cover md:object-contain md:h-full "
           />
-          <div className="absolute right-[120px] top-[350px] max-w-[750px] h-[350px] bg-gradient-to-r from-blue-500 to-cyan-500 z-50 lg:right-[20px] md:right-[30px] md:top-[240px] md:max-w-[600px] md:h-[300px] sm:max-w-[350px] sm:h-[250px] sm:top-[140px] sm:right-[10px] xs:max-w-[290px] xs:h-[200px] xs:top-[80px]">
+          <div className="absolute right-[120px] top-[350px] max-w-[750px] h-[350px] bg-gradient-to-r from-blue-500 to-cyan-500  lg:right-[20px] md:right-[30px] md:top-[240px] md:max-w-[600px] md:h-[300px] sm:max-w-[350px] sm:h-[250px] sm:top-[140px] sm:right-[10px] xs:max-w-[290px] xs:h-[200px] xs:top-[80px]">
             <div className=" flex flex-wrap pt-10 p-5 sm:pt-2 sm:justify-center gap-2 ">
               {awards.map((item) => {
                 return (
