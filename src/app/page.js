@@ -6,6 +6,7 @@ import CaseStudy from "./components/CaseStudy/CaseStudy";
 import WorkWith from "./components/WorkWith/WorkWith";
 import OurClients from "./components/OurClients/OurClients";
 import OurStories from "./components/OurStories/OurStories";
+import DiscussProject from "./components/DiscussProject/DiscussProject";
 const Home = () => {
   return (
     <>
@@ -14,9 +15,10 @@ const Home = () => {
         <Services />
         <OurProjects />
         <CaseStudy />
-        {/* <WorkWith/> */}
         <OurClients />
         <OurStories />
+        <DiscussProject />
+        <WorkWith />
       </div>
     </>
   );
