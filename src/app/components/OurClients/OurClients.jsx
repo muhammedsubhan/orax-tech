@@ -4,6 +4,8 @@ import Image from "next/image";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+// import SwiperCore, { Navigation } from "swiper";
+// SwiperCore.use(Navigation);
 
 const OurClients = () => {
   const clients = [
