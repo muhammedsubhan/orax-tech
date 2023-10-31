@@ -7,6 +7,7 @@ import WorkWith from "./components/WorkWith/WorkWith";
 import OurClients from "./components/OurClients/OurClients";
 import OurStories from "./components/OurStories/OurStories";
 import DiscussProject from "./components/DiscussProject/DiscussProject";
+import LatestBlogs from "./components/LatestBlogs/LatestBlogs";
 const Home = () => {
   return (
     <>
@@ -19,6 +20,7 @@ const Home = () => {
         <OurStories />
         <DiscussProject />
         <WorkWith />
+        <LatestBlogs />
       </div>
     </>
   );

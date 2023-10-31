@@ -27,7 +27,7 @@ const WorkWith = () => {
 
   return (
     <>
-      <div className="min-h-[400px] flex justify-evenly lg:gap-4 md:gap-8 items-center lg:flex-col bg-gradient-to-r from-blue-500 to-cyan-500 py-20">
+      <div className="min-h-[400px] flex justify-evenly lg:gap-4 md:gap-8 items-center lg:flex-col bg-gradient-to-r from-blue-500 to-cyan-500 py-20 mb-10">
         <div className="flex flex-col gap-5 lg:px-14 md:px-4 ">
           <h1 className="text-5xl font-semibold sm:text-3xl xs:text-xl text-white">
             Who We Work With
