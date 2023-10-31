@@ -61,7 +61,7 @@ const CaseStudy = () => {
                 src={`/${item.img}`}
                 width={400}
                 height={100}
-                alt={item.name}
+                alt="case-study"
                 className="rounded-xl sm:w-[320px]"
               />
               <div className=" absolute  flex flex-col items-center gap-3 min-w-full justify-center h-[150px] top-[80%] bg-white drop-shadow-2xl p-6 xs:p-3 rounded-xl xs:top-[80%]">

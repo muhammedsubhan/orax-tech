@@ -274,16 +274,17 @@ const ContactUs = () => {
             <div className="px-6 md:px-1 py-14 flex flex-col gap-10 ">
               {points.map((item) => {
                 return (
-                  <>
-                    <div key={item.id} className="flex gap-5 sm:gap-3">
-                      <div className="rounded-full md:border-none md:rounded-none w-[50px] h-[50px] flex items-center justify-center border relative">
-                        <h1>{item.id}</h1>
-                      </div>
-                      <div className="w-[400px] md:w-full">
-                        <p className="sm:text-sm xs:text-xs">{item.title}</p>
-                      </div>
+                  <div
+                    key={`${item.id}-${item.title}`}
+                    className="flex gap-5 sm:gap-3"
+                  >
+                    <div className="rounded-full md:border-none md:rounded-none w-[50px] h-[50px] flex items-center justify-center border relative">
+                      <h1>{item.id}</h1>
                     </div>
-                  </>
+                    <div className="w-[400px] md:w-full">
+                      <p className="sm:text-sm xs:text-xs">{item.title}</p>
+                    </div>
+                  </div>
                 );
               })}
             </div>

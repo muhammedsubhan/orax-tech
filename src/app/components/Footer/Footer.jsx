@@ -15,6 +15,7 @@ const Footer = () => {
           width={250}
           height={250}
           className="sm:w-[200px] "
+          alt="logo"
         />
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-2">

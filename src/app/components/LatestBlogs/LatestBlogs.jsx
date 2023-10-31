@@ -43,7 +43,7 @@ const LatestBlogs = () => {
                   src={`/${item.img}`}
                   width={450}
                   height={400}
-                  alt={item.title}
+                  alt="blogs-images"
                   className="md:w-full"
                 />
 

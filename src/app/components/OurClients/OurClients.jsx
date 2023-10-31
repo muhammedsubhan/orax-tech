@@ -2,12 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import SwiperCore, { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
-
-SwiperCore.use([Navigation]);
 
 const OurClients = () => {
   const clients = [
@@ -77,7 +73,7 @@ const OurClients = () => {
                     src={`/${item.img}`}
                     width={80}
                     height={80}
-                    alt={item.name}
+                    alt="clients"
                     className="rounded-full sm:w-[50px] sm:h-[50px]"
                   />
                   <div>
@@ -92,6 +88,7 @@ const OurClients = () => {
                     src="/stars.png"
                     width={60}
                     height={60}
+                    alt="stars"
                     className="flex self-end sm:w-[45px] sm:h-[45px] "
                   />
                 </div>

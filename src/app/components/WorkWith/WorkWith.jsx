@@ -52,6 +52,7 @@ const WorkWith = () => {
                     src={`/${item.img}`}
                     width={80}
                     height={80}
+                    alt="images"
                     className="xs:w-[40px]"
                   />
                   <p className="text-xl md:text-base sm:text-sm font-semibold text-center">

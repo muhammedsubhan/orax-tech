@@ -73,7 +73,7 @@ const TechnologyStacks = () => {
                     src={`/${item.img}`}
                     width={80}
                     height={80}
-                    alt={item.name}
+                    alt="technology"
                     className="md:w-[50px] md:h-[50px] sm:w-[30px] sm:h-[30px]"
                   />
                   <p className="text-xl md:text-base sm:text-xs">{item.name}</p>
