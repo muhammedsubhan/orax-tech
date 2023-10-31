@@ -25,7 +25,7 @@ const LatestBlogs = () => {
 
   return (
     <>
-      <div className="min-h-[650px] py-20 mb-10">
+      <div className="min-h-[650px] py-20">
         <div className="flex flex-col items-center gap-5">
           <h1 className="text-4xl font-semibold sm:text-2xl ">Latest Blogs</h1>
           <p className="text-xl font-light sm:text-base text-center">

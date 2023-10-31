@@ -8,6 +8,7 @@ import OurClients from "./components/OurClients/OurClients";
 import OurStories from "./components/OurStories/OurStories";
 import DiscussProject from "./components/DiscussProject/DiscussProject";
 import LatestBlogs from "./components/LatestBlogs/LatestBlogs";
+import ContactUs from "./components/ContactUs/ContactUs";
 const Home = () => {
   return (
     <>
@@ -21,6 +22,7 @@ const Home = () => {
         <DiscussProject />
         <WorkWith />
         <LatestBlogs />
+        <ContactUs />
       </div>
     </>
   );
