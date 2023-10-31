@@ -74,9 +74,9 @@ const ContactUs = () => {
   return (
     <>
       <div className="min-h-[700px] ">
-        <div className="flex flex-col gap-4 px-10">
+        <div className="flex flex-col gap-4 px-10 xs:px-3 ">
           <h1 className="text-4xl font-semibold">Contact Us!</h1>
-          <p className="text-xl">
+          <p className="text-xl xs:text-base">
             <span className="text-red-500 underline cursor-pointer">
               Book a call
             </span>{" "}
@@ -84,11 +84,11 @@ const ContactUs = () => {
             we’ve processed your request.
           </p>
         </div>
-        <div className="py-20 px-10 flex  gap-10 justify-between">
-          <div className=" min-w-[900px] py-6">
-            <form className="flex items-center gap-5">
-              <div className="flex flex-col gap-5">
-                <div className="flex flex-col">
+        <div className="py-20 px-10 lg:px-2 flex  gap-10 justify-between lg:flex-col">
+          <div className=" min-w-[900px] py-6 lg:min-w-full ">
+            <form className="flex items-center gap-5 xs:flex-col ">
+              <div className="flex flex-col gap-5 flex-1 xs:w-full">
+                <div className="flex flex-col ">
                   <label
                     className={
                       isFocused.name || formData.name ? "visible" : "hidden"
@@ -103,7 +103,7 @@ const ContactUs = () => {
                     placeholder="Name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    className="w-[350px] focus:outline-none h-[40px] border-b border-gray-600"
+                    className="w-full focus:outline-none h-[40px] border-b border-gray-600 "
                   />
                 </div>
                 <div className="flex flex-col">
@@ -121,7 +121,7 @@ const ContactUs = () => {
                     placeholder="Email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-[350px] focus:outline-none h-[40px] border-b border-gray-600"
+                    className="w-full focus:outline-none h-[40px] border-b border-gray-600 "
                   />
                 </div>
                 <div className="flex flex-col">
@@ -129,7 +129,7 @@ const ContactUs = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleInputChange}
-                    className="w-[350px] focus:outline-none h-[40px] border-b border-gray-600"
+                    className="w-full focus:outline-none h-[40px] border-b border-gray-600"
                   >
                     <option value="">Subject*</option>
                     <option value=" IT staff augmentation">
@@ -143,7 +143,7 @@ const ContactUs = () => {
                   </select>
                 </div>
               </div>
-              <div className="flex flex-col gap-5">
+              <div className="flex flex-col gap-5 flex-1 xs:w-full">
                 <div className="flex flex-col">
                   <label
                     className={
@@ -161,7 +161,7 @@ const ContactUs = () => {
                     placeholder="Company"
                     value={formData.company}
                     onChange={handleInputChange}
-                    className="w-[350px] focus:outline-none h-[40px] border-b border-gray-600"
+                    className="w-full focus:outline-none h-[40px] border-b border-gray-600"
                   />
                 </div>
                 <div className="flex flex-col">
@@ -179,7 +179,7 @@ const ContactUs = () => {
                     placeholder="Phone"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className="w-[350px] focus:outline-none h-[40px] border-b border-gray-600"
+                    className="w-full focus:outline-none h-[40px] border-b border-gray-600"
                   />
                 </div>
                 <div className="flex flex-col">
@@ -187,7 +187,7 @@ const ContactUs = () => {
                     name="projectBudget"
                     value={formData.projectBudget}
                     onChange={handleInputChange}
-                    className="w-[350px] focus:outline-none h-[40px] border-b border-gray-600"
+                    className="w-full focus:outline-none h-[40px] border-b border-gray-600"
                   >
                     <option value="Project Budget (min. $15K)">
                       Project Budget (min. $15K)
@@ -207,15 +207,15 @@ const ContactUs = () => {
                 cols="50"
                 rows="0"
                 placeholder="Describe Your Needs In Details*"
-                className=" focus:outline-none h-[40px] w-[720px] border-b border-gray-600"
+                className=" focus:outline-none h-[40px] w-full border-b border-gray-600"
               ></textarea>
             </div>
             <small className="text-xs font-normal text-gray-600">
               Please include project details, duration, tech stack, IT
               professionals needed, and other relevant info
             </small>
-            <div className="py-16 flex items-center gap-8">
-              <div className="border-2 border-dotted border-gray-500 px-5 w-[330px] h-[150px] flex flex-col gap-5 items-center justify-center">
+            <div className="py-16 flex items-center justify-center sm:flex-col gap-8 sm:px-4">
+              <div className="border-2 border-dotted border-gray-500 px-5 w-[330px] h-[150px] sm:w-full flex flex-col gap-5 items-center justify-center">
                 <p className="text-xs text-center leading-loose text-gray-600">
                   Record a voice message about your
                   <br />
@@ -225,7 +225,7 @@ const ContactUs = () => {
                   <BsFillMicFill />
                 </button>
               </div>
-              <div className="relative border-2 border-dotted border-gray-500 px-5 w-[330px] h-[150px] flex flex-col gap-5 items-center justify-center">
+              <div className="relative border-2 border-dotted border-gray-500 px-5 w-[330px] h-[150px] sm:w-full  flex flex-col gap-5 items-center justify-center">
                 <p className="text-xs text-center leading-loose text-gray-600">
                   Attach additional documents as needed
                   <br />
@@ -248,9 +248,9 @@ const ContactUs = () => {
                 </div>
               </div>
             </div>
-            <div className="flex  gap-6">
-              <div className="w-[580px]">
-                <p className="text-sm text-gray-600">
+            <div className="flex  gap-40 sm:gap-8 md:gap-20 sm:flex-col">
+              <div className="w-[580px] sm:w-full md:w-[680px] ">
+                <p className="text-sm text-gray-500 sm:text-xs">
                   Please be informed that when you click the Send button
                   Innowise Group will process your personal data in accordance
                   with our{" "}
@@ -260,25 +260,27 @@ const ContactUs = () => {
                   for the purpose of providing you with appropriate information.
                 </p>
               </div>
-              <button className="bg-sky-600 flex items-center gap-2 px-10 py-2 md:text-sm sm:text-xs text-base text-white">
-                Send
-              </button>
+              <div>
+                <button className="bg-sky-600 flex items-center gap-2 px-10 py-2 md:text-sm sm:text-xs text-base text-white">
+                  Send
+                </button>
+              </div>
             </div>
           </div>
-          <div className="bg-gradient-to-r from-blue-500 to-cyan-500 w-full text-white">
-            <div className="px-8 py-10 text-3xl font-semibold">
+          <div className=" bg-gradient-to-r from-blue-500 to-cyan-500 w-full text-white">
+            <div className="px-8 py-10 text-3xl font-semibold sm:text-2xl xs:text-xl sm:py-4">
               <h1>What happens next?</h1>
             </div>
-            <div className="px-5 py-14 flex flex-col gap-10">
-              {points.map((item, index) => {
+            <div className="px-6 md:px-1 py-14 flex flex-col gap-10 ">
+              {points.map((item) => {
                 return (
                   <>
-                    <div key={item.id} className="flex gap-5 items-center">
-                      <div className="rounded-full w-[50px] h-[50px] flex items-center justify-center border relative">
+                    <div key={item.id} className="flex gap-5 sm:gap-3">
+                      <div className="rounded-full md:border-none md:rounded-none w-[50px] h-[50px] flex items-center justify-center border relative">
                         <h1>{item.id}</h1>
                       </div>
-                      <div>
-                        <p className="w-[400px]">{item.title}</p>
+                      <div className="w-[400px] md:w-full">
+                        <p className="sm:text-sm xs:text-xs">{item.title}</p>
                       </div>
                     </div>
                   </>
